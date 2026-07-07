@@ -30,6 +30,18 @@ if (newsFeed) {
   });
 }
   </script>
+  <script>
+async function connectWallet() {
+    if (window.solana && window.solana.isPhantom) {
+        const resp = await window.solana.connect();
+        document.getElementById("walletStatus").textContent =
+            "Connected: " + resp.publicKey.toString();
+    } else {
+        document.getElementById("walletStatus").textContent =
+            "Phantom wallet not found";
+    }
+}
+  </script>
 
       <body>
 
