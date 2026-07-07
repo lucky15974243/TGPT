@@ -226,6 +226,21 @@ gap:16px;
 margin-top:30px;
 margin-bottom:40px;
 }
+.chart {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.chart h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.chart iframe {
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
 
 .btn{
 transition:.25s;
