@@ -176,4 +176,30 @@ color:#9db6aa;
 .stats{
 grid-template-columns:repeat(4,1fr);
 }
+}.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
+margin:32px 0;
+}
+
+.stat{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(0,255,170,.18);
+border-radius:18px;
+padding:22px;
+text-align:center;
+backdrop-filter:blur(10px);
+}
+
+.stat h3{
+margin:0;
+font-size:34px;
+color:#35ff99;
+}
+
+.stat p{
+margin-top:8px;
+color:#b8c2cc;
+font-size:15px;
 }
