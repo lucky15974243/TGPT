@@ -78,6 +78,32 @@
   <div class="stat-card"><h3 id="marketcap">$--</h3><p>Market Cap</p></div>
   <div class="stat-card"><h3 id="holders">Coming Soon</h3><p>Holders</p></div>
   <div class="stat-card"><h3 id="volume">$--</h3><p>24H Volume</p></div>
+  <script>
+async function updateStats() {
+    try {
+        const res = await fetch("https://api.dexscreener.com/latest/dex/tokens/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump");
+        const data = await res.json();
+
+        if (data.pairs && data.pairs.length) {
+            const pair = data.pairs[0];
+
+            document.getElementById("price").textContent =
+                "$" + Number(pair.priceUsd).toFixed(6);
+
+            document.getElementById("marketcap").textContent =
+                "$" + (pair.fdv || 0).toLocaleString();
+
+            document.getElementById("volume").textContent =
+                "$" + (pair.volume.h24 || 0).toLocaleString();
+        }
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+updateStats();
+setInterval(updateStats, 30000);
+  </script>
 </section>
 
 <section id="buy" class="how-to-buy">
