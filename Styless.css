@@ -1,0 +1,150 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#07120d;
+color:#fff;
+font-family:Inter,Arial,sans-serif;
+line-height:1.6;
+background-image:
+radial-gradient(circle at top,#00ff8844,transparent 40%),
+linear-gradient(180deg,#08150f,#050907);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 24px;
+background:#08110d;
+border-bottom:1px solid #1aff9933;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:16px;
+}
+
+.brand img{
+width:64px;
+height:64px;
+border-radius:18px;
+}
+
+.brand strong{
+font-size:34px;
+display:block;
+}
+
+.brand span{
+color:#28ff9d;
+font-size:22px;
+}
+
+.nav-btn,
+.btn{
+display:inline-block;
+padding:15px 28px;
+background:#1cff9a;
+color:#06100b;
+font-weight:700;
+text-decoration:none;
+border-radius:16px;
+transition:.25s;
+}
+
+.nav-btn:hover,
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 0 30px #1cff9a;
+}
+
+.hero{
+max-width:1200px;
+margin:auto;
+padding:80px 24px;
+}
+
+.tag{
+display:inline-block;
+padding:12px 22px;
+border:2px solid #1cff9a55;
+border-radius:40px;
+color:#66ffc1;
+margin-bottom:28px;
+}
+
+.copy h1{
+font-size:72px;
+line-height:0.95;
+margin-bottom:25px;
+}
+
+.copy p{
+max-width:760px;
+font-size:22px;
+color:#b8c9bf;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+margin-top:40px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
+margin-top:40px;
+}
+
+.cards article{
+background:#101d17;
+padding:28px;
+border-radius:22px;
+border:1px solid #1cff9a22;
+}
+
+.cards h2{
+color:#1cff9a;
+margin-bottom:10px;
+}
+
+.panel{
+margin-top:40px;
+background:#0f1a15;
+padding:30px;
+border-radius:22px;
+border:1px solid #1cff9a22;
+}
+
+.warning{
+border:1px solid #ff5b5b55;
+}
+
+footer{
+padding:45px;
+text-align:center;
+color:#8ba395;
+border-top:1px solid #1cff9a22;
+margin-top:60px;
+}
+
+button{
+cursor:pointer;
+background:#1cff9a;
+border:none;
+padding:12px 22px;
+border-radius:12px;
+font-weight:bold;
+}
