@@ -9,6 +9,36 @@
   <link rel="icon" href="tgpt-logo.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+  <script>
+const tokenAddress = "BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump";
+
+async function loadStats() {
+  try {
+    const res = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`);
+    const data = await res.json();
+    const pair = data.pairs?.[0];
+
+    if (!pair) return;
+
+    document.getElementById("price").textContent =
+      "$" + Number(pair.priceUsd).toFixed(8);
+
+    document.getElementById("marketcap").textContent =
+      "$" + Number(pair.marketCap || pair.fdv).toLocaleString();
+
+    document.getElementById("volume").textContent =
+      "$" + Number(pair.volume?.h24 || 0).toLocaleString();
+
+    document.getElementById("holders").textContent =
+      "Coming Soon";
+  } catch (e) {
+    console.log("Stats failed to load", e);
+  }
+}
+
+loadStats();
+setInterval(loadStats, 30000);
+  </script>
 <body>
   <nav class="navbar">
     <div class="logo">TEAM GPT</div>
