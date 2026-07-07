@@ -302,3 +302,17 @@ box-shadow:0 0 30px rgba(0,255,170,.18);
 .chart {
     margin-top: 50px;
 }
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0,255,140,0.2);
+  color: #bfffdc;
+  font-size: 14px;
+}
+
+.footer .mint {
+  word-break: break-all;
+  color: #20ff8a;
+  margin: 10px 0;
+}
