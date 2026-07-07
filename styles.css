@@ -552,3 +552,18 @@ html {
 .community-card p{
     color:#cfcfcf;
 }
+section {
+  animation: fadeUp .7s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
