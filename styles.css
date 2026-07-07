@@ -414,3 +414,17 @@ button:hover {
     border-left:4px solid #00e5ff;
     font-size:16px;
 }
+
+.ai-news{
+    margin:40px auto;
+    max-width:1000px;
+    padding:25px;
+    border-radius:16px;
+    background:#111827;
+    border:1px solid #2d3748;
+}
+
+.ai-news h2{
+    text-align:center;
+    margin-bottom:20px;
+}
