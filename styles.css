@@ -588,3 +588,4 @@ section {
     font-size:32px;
     margin-bottom:10px;
 }
+<button onclick="copyMint(this)">Copy</button>
