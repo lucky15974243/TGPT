@@ -456,3 +456,22 @@ html {
     color:#cfd8d3;
     line-height:1.6;
 }
+.disclaimer {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(32,255,138,.25);
+  background: rgba(255,255,255,.04);
+  text-align: center;
+}
+
+.disclaimer h2 {
+  color: #20ff8a;
+  margin-bottom: 12px;
+}
+
+.disclaimer p {
+  color: #d7d7d7;
+  line-height: 1.6;
+}
