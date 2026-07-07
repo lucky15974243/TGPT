@@ -566,4 +566,25 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.stat-card{
+    background:#101814;
+    border:1px solid rgba(37,248,154,.2);
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+}
+
+.stat-card h3{
+    color:#25f89a;
+    font-size:32px;
+    margin-bottom:10px;
 }
