@@ -366,3 +366,12 @@ html {
 .nav-links a:hover {
     color: #20ff8a;
 }
+.token-card {
+    transition: all .3s ease;
+}
+
+.token-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(32,255,138,.25);
+    border-color: #20ff8a;
+}
