@@ -589,3 +589,56 @@ section {
     margin-bottom:10px;
 }
 <button onclick="copyMint(this)">Copy</button>
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(37,248,154,.18), transparent 30%),
+    radial-gradient(circle at 80% 40%, rgba(0,180,255,.12), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(37,248,154,.12), transparent 35%);
+  z-index: -1;
+  animation: bgMove 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  from {
+    transform: scale(1);
+    opacity: .7;
+  }
+  to {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.token-card,
+.stat-card,
+.community-card,
+.faq-item {
+  transition: .3s ease;
+}
+
+.token-card:hover,
+.stat-card:hover,
+.community-card:hover,
+.faq-item:hover {
+  transform: translateY(-8px);
+  border-color: #25f89a;
+  box-shadow: 0 0 30px rgba(37,248,154,.25);
+}
+
+.hero h1,
+.hero-title,
+h1 {
+  animation: glowText 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px rgba(37,248,154,.2);
+  }
+  to {
+    text-shadow: 0 0 28px rgba(37,248,154,.55);
+  }
+}
