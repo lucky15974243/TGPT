@@ -514,3 +514,41 @@ html {
     font-size:14px;
     opacity:.7;
 }
+.community{
+    max-width:1100px;
+    margin:90px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.community-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:35px;
+}
+
+.community-card{
+    background:#111a17;
+    border:1px solid rgba(37,248,154,.2);
+    border-radius:18px;
+    padding:30px 20px;
+    color:white;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.community-card:hover{
+    transform:translateY(-6px);
+    border-color:#25f89a;
+    box-shadow:0 0 25px rgba(37,248,154,.2);
+}
+
+.community-card h3{
+    color:#25f89a;
+    margin-bottom:12px;
+}
+
+.community-card p{
+    color:#cfcfcf;
+}
