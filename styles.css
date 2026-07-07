@@ -147,4 +147,33 @@ border:none;
 padding:12px 22px;
 border-radius:12px;
 font-weight:bold;
+}.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin:40px 0;
+}
+
+.stat{
+background:#101d17;
+padding:20px;
+border-radius:18px;
+border:1px solid #1cff9a22;
+text-align:center;
+}
+
+.stat h3{
+font-size:30px;
+color:#1cff9a;
+margin-bottom:8px;
+}
+
+.stat p{
+color:#9db6aa;
+}
+
+@media(min-width:900px){
+.stats{
+grid-template-columns:repeat(4,1fr);
+}
 }
