@@ -475,3 +475,42 @@ html {
   color: #d7d7d7;
   line-height: 1.6;
 }
+.footer{
+    margin-top:100px;
+    padding:50px 20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer h3{
+    font-size:32px;
+    color:#25f89a;
+    margin-bottom:10px;
+}
+
+.footer p{
+    color:#bfbfbf;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:30px 0;
+}
+
+.footer-links a{
+    color:#25f89a;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.copyright{
+    font-size:14px;
+    opacity:.7;
+}
