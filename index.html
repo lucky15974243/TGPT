@@ -1,18 +1,143 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <h1>The AI community token for people building with GPT.</h1>
-
-<img src="teamgpt-hero.png" alt="TEAM GPT AI community poster" class="hero-poster">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TEAM GPT | $TGPT</title>
-  <meta name="description" content="TEAM GPT ($TGPT) — fan-made Solana AI community token for GPT supporters." />
-  <meta name="theme-color" content="#00ff88" />
-  <link rel="icon" href="tgpt-logo.svg" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="TEAM GPT ($TGPT) — Solana AI community token.">
+  <link rel="icon" href="tgpt-logo.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
-  <script>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">TEAM GPT</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#buy">Buy</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</nav>
+
+<header class="nav">
+  <div class="brand">
+    <img src="tgpt-logo.svg" alt="TGPT logo">
+    <div>
+      <strong>TEAM GPT</strong>
+      <span>$TGPT</span>
+    </div>
+  </div>
+  <a class="nav-btn" href="https://pump.fun/coin/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">Buy</a>
+</header>
+
+<main>
+
+<section id="about" class="hero">
+  <h1>TEAM GPT</h1>
+  <h2>One Community. Unlimited Intelligence.</h2>
+
+  <p>
+    More than a token. A movement. Built by humans. Powered by AI.
+  </p>
+
+  <img src="teamgpt-hero.png" alt="TEAM GPT AI community poster" class="hero-poster">
+
+  <div class="buttons">
+    <a class="btn primary" href="https://pump.fun/coin/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">Buy on Pump.fun</a>
+    <a class="btn" href="https://jup.ag/swap/SOL-BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">Buy on Jupiter</a>
+    <a class="btn" href="https://solscan.io/token/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">Solscan</a>
+    <a class="btn" href="https://dexscreener.com/solana/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">DexScreener</a>
+  </div>
+
+  <div class="contract">
+    <span>Official Mint</span>
+    <code>BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump</code>
+    <button onclick="copyMint(this)">Copy</button>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat-card"><h3 id="price">$--</h3><p>Price</p></div>
+  <div class="stat-card"><h3 id="marketcap">$--</h3><p>Market Cap</p></div>
+  <div class="stat-card"><h3 id="holders">Coming Soon</h3><p>Holders</p></div>
+  <div class="stat-card"><h3 id="volume">$--</h3><p>24H Volume</p></div>
+</section>
+
+<section id="buy" class="how-to-buy">
+  <h2>How to Buy TEAM GPT</h2>
+  <div class="token-grid">
+    <div class="token-card"><h3>1. Get a Wallet</h3><p>Download Phantom, Solflare, or another Solana wallet.</p></div>
+    <div class="token-card"><h3>2. Fund with SOL</h3><p>Transfer SOL into your wallet from an exchange.</p></div>
+    <div class="token-card"><h3>3. Buy TGPT</h3><p>Use Pump.fun or Jupiter to swap SOL for TEAM GPT.</p></div>
+    <div class="token-card"><h3>4. Join the Movement</h3><p>Share the project and help grow the community.</p></div>
+  </div>
+</section>
+
+<section class="chart">
+  <h2>Live TEAM GPT Chart</h2>
+  <iframe
+    src="https://dexscreener.com/solana/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump?embed=1&theme=dark"
+    width="100%"
+    height="500"
+    frameborder="0">
+  </iframe>
+</section>
+
+<section id="tokenomics" class="tokenomics">
+  <h2>Tokenomics</h2>
+  <div class="token-grid">
+    <div class="token-card"><h3>Total Supply</h3><p>1,000,000,000 TGPT</p></div>
+    <div class="token-card"><h3>Chain</h3><p>Solana</p></div>
+    <div class="token-card"><h3>Tax</h3><p>0% Buy / 0% Sell</p></div>
+    <div class="token-card"><h3>Community</h3><p>Built by humans. Powered by AI.</p></div>
+  </div>
+</section>
+
+<section id="roadmap" class="roadmap">
+  <h2>Roadmap</h2>
+  <div class="token-grid">
+    <div class="token-card"><h3>Phase 1</h3><p>Launch • Website • Community • DexScreener</p></div>
+    <div class="token-card"><h3>Phase 2</h3><p>Marketing • Socials • Partnerships • Growth</p></div>
+    <div class="token-card"><h3>Phase 3</h3><p>AI Tools • Community Utilities • Expansion</p></div>
+  </div>
+</section>
+
+<section class="socials">
+  <h2>Follow TEAM GPT</h2>
+  <p>Stay connected with the community and future updates.</p>
+  <div class="social-buttons">
+    <a href="https://x.com" target="_blank">X / Twitter</a>
+    <a href="https://t.me" target="_blank">Telegram</a>
+    <a href="https://github.com/lucky15974243/TGPT" target="_blank">GitHub</a>
+    <a href="https://dexscreener.com/solana/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">DexScreener</a>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <h2>FAQ</h2>
+  <div class="faq-item"><h3>What is TEAM GPT?</h3><p>A Solana community token for AI users, builders, traders, creators, and supporters.</p></div>
+  <div class="faq-item"><h3>Where can I buy?</h3><p>Use the Pump.fun or Jupiter buttons above.</p></div>
+  <div class="faq-item"><h3>What wallet do I need?</h3><p>Phantom, Solflare, Backpack, or any Solana-compatible wallet.</p></div>
+</section>
+
+<section class="disclaimer">
+  <h2>Important Notice</h2>
+  <p>TEAM GPT is a community meme token. Crypto is high risk. Only trade what you can afford to lose.</p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <h3>TEAM GPT</h3>
+  <p>More than a token. A movement.</p>
+  <p class="mint">BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump</p>
+  <p>© 2026 TEAM GPT • Community Powered</p>
+</footer>
+
+<script>
 const tokenAddress = "BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump";
 
 async function loadStats() {
@@ -20,499 +145,25 @@ async function loadStats() {
     const res = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`);
     const data = await res.json();
     const pair = data.pairs?.[0];
-
     if (!pair) return;
 
-    document.getElementById("price").textContent =
-      "$" + Number(pair.priceUsd).toFixed(8);
-
-    document.getElementById("marketcap").textContent =
-      "$" + Number(pair.marketCap || pair.fdv).toLocaleString();
-
-    document.getElementById("volume").textContent =
-      "$" + Number(pair.volume?.h24 || 0).toLocaleString();
-
-    document.getElementById("holders").textContent =
-      "Coming Soon";
+    document.getElementById("price").textContent = "$" + Number(pair.priceUsd).toFixed(8);
+    document.getElementById("marketcap").textContent = "$" + Number(pair.marketCap || pair.fdv).toLocaleString();
+    document.getElementById("volume").textContent = "$" + Number(pair.volume?.h24 || 0).toLocaleString();
   } catch (e) {
-    console.log("Stats failed to load", e);
+    console.log("Stats failed", e);
   }
+}
+
+function copyMint(btn) {
+  navigator.clipboard.writeText(tokenAddress);
+  btn.textContent = "Copied!";
+  setTimeout(() => btn.textContent = "Copy", 1200);
 }
 
 loadStats();
 setInterval(loadStats, 30000);
-  </script>
-<body>
-  <nav class="navbar">
-    <div class="logo">TEAM GPT</div>
-
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#faq">FAQ</a>
-    </div>
-  </nav>
-  <div class="stars"></div>
-  <header class="nav">
-    <div class="brand">
-      <img src="tgpt-logo.svg" alt="TGPT logo">
-      <div><strong>TEAM GPT</strong><span>$TGPT</span></div>
-    </div>
-   <a class="nav-btn" href="https://pump.fun/coin/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump">Buy</a>
-  </header>
-
-  <main>
-    <section class="how-to-buy">
-    <h2>How to Buy TEAM GPT</h2>
-
-    <div class="token-grid">
-        <div class="token-card">
-            <h3>1. Get a Wallet</h3>
-            <p>Download Phantom, Solflare, or another Solana wallet.</p>
-        </div>
-
-        <div class="token-card">
-            <h3>2. Fund with SOL</h3>
-            <p>Transfer SOL into your wallet from an exchange.</p>
-        </div>
-
-        <div class="token-card">
-            <h3>3. Buy TEAM GPT</h3>
-            <p>Click the Jupiter or Pump.fun button and swap SOL for TEAM GPT.</p>
-        </div>
-
-        <div class="token-card">
-            <h3>4. Join the Community</h3>
-            <p>Follow the project, share it, and help grow the ecosystem.</p>
-        </div>
-    </div>
-    </section>
-    <section id="faq" class="faq">
-      <section id="roadmap" class="roadmap">
-        <section id="tokenomics" class="tokenomics">
-          <section id="about">
-    <section class="hero">
-      <div class="hero-visual">
-        <img src="teamgpt-hero.png" alt="TEAM GPT AI community poster" class="hero-poster">
-  <div class="ai-orb">
-    <span>GPT</span>
-  </div>
-    </div>
-      <section class="stats">
-    <div class="stat-card">
-        <h3 id="price">$--</h3>
-        <p>Price</p>
-    </div>
-
-    <div class="stat-card">
-        <h3 id="marketcap">$--</h3>
-        <p>Market Cap</p>
-    </div>
-
-    <div class="stat-card">
-        <h3 id="holders">--</h3>
-        <p>Holders</p>
-    </div>
-
-    <div class="stat-card">
-        <h3 id="volume">$--</h3>
-        <p>24H Volume</p>
-    </div>
-      </section>
-      <div class="poster">
-        <div class="poster-top">THE BEST AI?</div>
-        <div class="poster-main">CHATGPT</div>
-        <div class="poster-sub">TEAM GPT • SOLANA • MEME CULTURE</div>
-        <div class="qr">TGPT</div>
-      </div>
-
-      <div class="tag">THE COMMUNITY BEHIND AI</div>
-
-<h1>TEAM GPT</h1>
-
-<h2>The AI Community Token</h2>
-
-<p>
-Built for GPT users, AI builders, traders, creators, and everyone helping shape the future of artificial intelligence.
-</p>
-
-<div class="stats">
-  <div class="stat">
-    <h3>Solana</h3>
-    <p>Network</p>
-  </div>
-
-  <div class="stat">
-    <h3>24/7</h3>
-    <p>Community</p>
-  </div>
-
-  <div class="stat">
-    <h3>100%</h3>
-    <p>Fan Made</p>
-  </div>
-
-  <div class="stat">
-    <h3>Open</h3>
-    <p>Worldwide</p>
-  </div>
-</div>
-
-        <div class="tag">FAN-MADE • SOLANA • GPT CULTURE</div>
-        <h1>The AI community token for people building with GPT.</h1>
-        <p>TEAM GPT is a Solana community token for GPT supporters, AI builders, traders, creators, and anyone using AI to build something real.</p>
-
-        <div class="buttons">
-  <a class="btn primary" href="https://pump.fun/coin/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump">Buy on Pump.fun</a>
-  <a class="btn" href="https://solscan.io/token/BVWsbC6gmTuVvmsaK8XEa1N7Gt15bntnnWfFQUcmpump">View Solscan</a>
-  <a class="btn" href="https://dexscreener.com/solana/BVWsbC6gmTuVvmsaK8XEa1N7Gt15bntnnWfFQUcmpump">DexScreener</a>
-        </div>
-
-        <div class="contract">
-          <span>Official mint</span>
-          <code>BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump</code>
-          <script>
-function copyMint(button) {
-  const mint = "BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump";
-
-  navigator.clipboard.writeText(mint).then(() => {
-    button.textContent = "Copied!";
-    setTimeout(() => {
-      button.textContent = "Copy";
-    }, 1500);
-  });
-}
-          </script>
-        </div>
-      
-  <div class="backup">
-  <a href="https://pump.fun/coin/BVWsbC6gmTuVvmsaK8XEa1N7Gt15bntnnWfFQUcmpump">Pump.fun backup link</a>
-  <a class="btn jupiter" href="https://jup.ag/swap/SOL-BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">Buy on Jupiter</a>
-  </div>        
-      </div>
-    </section>
-
-    <section class="ticker">
-      <span>GPT CULTURE</span><span>AI BUILDERS</span><span>SOLANA</span><span>COMMUNITY</span><span>MEME TOKEN</span>
-    </section>
-
-  </div>
-    </section>
-    <section class="chart">
-  <h2>Live TEAM GPT Chart</h2>
-
-  <iframe
-    src="https://dexscreener.com/solana/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump?embed=1&theme=dark"
-    width="100%"
-    height="500"
-    frameborder="0">
-  </iframe>
-    </section>
-<section class="stats">
-  <div class="stat">
-    <h3>24/7</h3>
-    <p>Community</p>
-  </div>
-
-  <div class="stat">
-    <h3>100%</h3>
-    <p>Solana</p>
-  </div>
-
-  <div class="stat">
-    <h3>AI</h3>
-    <p>Powered Culture</p>
-  </div>
-
-  <div class="stat">
-    <h3>Fast</h3>
-    <p>Growing</p>
-  </div>
-</section>
-    <section class="cards">
-      <article><h2>Direct links</h2><p>Buttons are wired to the TGPT mint so users can open Pump.fun, Jupite Solscan, and DexScreener without searching manually.</p></article>
-      <article><h2>Built for attention</h2><p>Clean crypto landing page, mobile-first layout, animated background, and clear buy actions.</p></article>
-      <article><h2>Copy contract</h2><p>Visitors can copy the TGPT mint and paste it into Jupiter, Phantom, Solscan, or any Solana tool.</p></article>
-    </section>
-
-    <section class="panel">
-      <h2>How to buy</h2>
-      <ol>
-        <li>Tap <b>Buy on Pump.fun</b> to open the TGPT token page.</li>
-        <li>Or tap <b>Trade on Jupiter</b> to open SOL → TGPT.</li>
-        <li>If Jupiter does not pre-load, paste the TGPT mint manually.</li>
-        <li>Connect wallet only when ready to trade.</li>
-      </ol>
-    </section>
-<section class="panel">
-<h2>Why TEAM GPT?</h2>
-
-<ul>
-<li>Community-owned.</li>
-<li>Fast Solana transactions.</li>
-<li>Built for AI supporters.</li>
-<li>Trade on Pump.fun or Jupiter.</li>
-<li>Growing ecosystem.</li>
-</ul>
-</section>
-    <section class="panel warning">
-      <h2>Risk warning</h2>
-      <p>Meme coins are high risk. Wallet values can be estimates. Cash-out depends on real liquidity, buyers, fees, and slippage.</p>
-    </section>
-          <section class="faq">
-  <h2>FAQ</h2>
-
-  <div class="faq-item">
-    <h3>What is TEAM GPT?</h3>
-    <p>TEAM GPT is a Solana community token created for GPT users, builders, traders, creators, and AI enthusiasts.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>What blockchain is it on?</h3>
-    <p>TEAM GPT is built on the Solana blockchain for fast, low-cost transactions.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>Where can I buy it?</h3>
-    <p>You can buy TEAM GPT through Pump.fun or Jupiter using the links above.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>Is there a tax?</h3>
-    <p>Current tax: 0% Buy / 0% Sell.</p>
-  </div>
-          </section>
-  </main>
-<section class="panel">
-<h2>Roadmap</h2>
-
-<div class="cards">
-
-</div>
-</section>
-  <section class="panel">
-  <h2>Tokenomics</h2>
-
-  <div class="cards">
-
-    <article>
-      <h3>Supply</h3>
-      <p>1,000,000,000 TGPT</p>
-    </article>
-
-    <article>
-      <h3>Network</h3>
-      <p>Solana</p>
-    </article>
-
-    <article>
-      <h3>Taxes</h3>
-      <p>0% Buy / 0% Sell</p>
-    </article>
-
-    <article>
-      <h3>Community</h3>
-      <p>100% Community Driven</p>
-    </article>
-
-  </div>
-  </section>
-  <section class="panel">
-<h2>Roadmap</h2>
-
-<div class="cards">
-
-<article>
-<h3>Phase 1</h3>
-<p>Launch • Website • Community • DexScreener</p>
-</article>
-
-<article>
-<h3>Phase 2</h3>
-<p>Marketing • Partnerships • AI Utilities • Listings</p>
-</article>
-
-<article>
-<h3>Phase 3</h3>
-<p>Community Governance • AI Tools • Staking • Expansion</p>
-</article>
-
-<article>
-<h3>Future</h3>
-<p>TEAM GPT ecosystem powered by the community.</p>
-</article>
-
-</div>
-  </section>
-  <section class="tokenomics">
-  <h2>Tokenomics</h2>
-
-  <div class="token-grid">
-    <div class="token-card">
-      <h3>Total Supply</h3>
-      <p>1,000,000,000 TEAMGPT</p>
-    </div>
-
-    <div class="token-card">
-      <h3>Chain</h3>
-      <p>Solana</p>
-    </div>
-
-    <div class="token-card">
-      <h3>Tax</h3>
-      <p>0% Buy / 0% Sell</p>
-    </div>
-
-    <div class="token-card">
-      <h3>Liquidity</h3>
-      <p>Locked on Launch</p>
-    </div>
-  </div>
-  </section>
-  <section class="community">
-    <h2>Join the TEAM GPT Community</h2>
-
-    <div class="buttons">
-        <a class="btn primary" href="https://x.com" target="_blank">X (Twitter)</a>
-        <a class="btn" href="https://t.me" target="_blank">Telegram</a>
-        <a class="btn" href="https://github.com/lucky15974243/TGPT" target="_blank">GitHub</a>
-    </div>
-  </section>
-  <section class="faq">
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="token-card">
-    <h3>What is TEAM GPT?</h3>
-    <p>A Solana community token for AI enthusiasts, builders, traders, and creators.</p>
-  </div>
-
-  <div class="token-card">
-    <h3>How do I buy?</h3>
-    <p>Use the Pump.fun or Jupiter buttons at the top of the page to trade.</p>
-  </div>
-
-  <div class="token-card">
-    <h3>What wallet do I need?</h3>
-    <p>Phantom, Solflare, Backpack, or any Solana-compatible wallet.</p>
-  </div>
-  </section>
-  <footer>
-    <strong>TEAM GPT • $TGPT</strong>
-    <span>BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump</span>
-  </footer>
-
-  <script>
-    function copyMint(btn) {
-      navigator.clipboard.writeText("BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump");
-      btn.textContent = "Copied";
-      setTimeout(() => btn.textContent = "Copy", 1200);
-    }
-  </script>
-          <section class="community">
-    <h2>Join the TEAM GPT Community</h2>
-
-    <div class="community-grid">
-
-        <a href="#" class="community-card">
-            <h3>𝕏 (Twitter)</h3>
-            <p>News, announcements and updates.</p>
-        </a>
-
-        <a href="#" class="community-card">
-            <h3>Telegram</h3>
-            <p>Chat with the community.</p>
-        </a>
-
-        <a href="#" class="community-card">
-            <h3>Discord</h3>
-            <p>Builders, holders and developers.</p>
-        </a>
-
-        <a href="#" class="community-card">
-            <h3>GitHub</h3>
-            <p>Open-source TEAM GPT project.</p>
-        </a>
-
-    </div>
-          </section>
-          <section class="socials">
-  <h2>Follow TEAM GPT</h2>
-  <p>Stay connected with the community and future updates.</p>
-
-  <div class="social-buttons">
-    <a href="https://x.com" target="_blank">X / Twitter</a>
-    <a href="https://t.me" target="_blank">Telegram</a>
-    <a href="https://github.com/lucky15974243/TGPT" target="_blank">GitHub</a>
-    <a href="https://dexscreener.com/solana/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump" target="_blank">DexScreener</a>
-  </div>
-          </section>
-          <footer class="footer">
-  <h3>TEAM GPT</h3>
-
-  <p>Building the future of AI communities on Solana.</p>
-
-  <div class="footer-links">
-    <a href="https://pump.fun/coin/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump">Pump.fun</a>
-    <a href="https://jup.ag">Jupiter</a>
-    <a href="https://solscan.io/token/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump">Solscan</a>
-    <a href="https://dexscreener.com/solana/BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump">DexScreener</a>
-  </div>
-
-  <p class="copyright">
-    © 2026 TEAM GPT • Community Powered
-  </p>
-          </footer>
-          <section class="features">
-  <h2>Why TEAM GPT?</h2>
-
-  <div class="token-grid">
-    <div class="token-card">
-      <h3>⚡ Fast</h3>
-      <p>Built on the Solana blockchain.</p>
-    </div>
-
-    <div class="token-card">
-      <h3>🤖 AI Community</h3>
-      <p>For GPT users, builders, traders, and creators.</p>
-    </div>
-
-    <div class="token-card">
-      <h3>🌎 Open</h3>
-      <p>Community-driven and available worldwide.</p>
-    </div>
-
-    <div class="token-card">
-      <h3>🔒 Transparent</h3>
-      <p>Public mint address, public trading, and open blockchain data.</p>
-    </div>
-  </div>
-          </section>
-  <footer class="footer">
-  <p>TEAM GPT • Solana Community Token</p>
-  <p class="mint">BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump</p>
-  <p>© 2026 TEAM GPT. Community-built.</p>
-  </footer>
-          <section class="disclaimer">
-  <h2>Important Notice</h2>
-  <p>
-    TEAM GPT is a community meme token. Cryptocurrency and meme coins are high risk.
-    Prices can move fast, liquidity can change, and buyers should only trade what
-    they can afford to lose.
-  </p>
-          </section>
-</html>
-Update TEAM GPT website
-        </body>...
-</section>
-
-<script>
-function copyMint(btn) {
-    navigator.clipboard.writeText("BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump");
-    btn.textContent = "Copied!";
-    setTimeout(() => btn.textContent = "Copy", 1200);
-}
 </script>
 
 </body>
-      </html>
+</html>
