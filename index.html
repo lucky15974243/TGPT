@@ -9,7 +9,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+  <script>
+const newsItems = [
+  "OpenAI, Claude, Gemini, Grok and Perplexity updates",
+  "AI tools, agents, automation and model news",
+  "Crypto + AI community updates",
+  "TEAM GPT community posts coming soon"
+];
+
+const newsFeed = document.getElementById("newsFeed");
+
+if (newsFeed) {
+  newsFeed.innerHTML = "";
+
+  newsItems.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "feed-item";
+    div.textContent = "🤖 " + item;
+    newsFeed.appendChild(div);
+  });
+}
+  </script>
+
+      <body>
 
 <nav class="navbar">
   <div class="logo">TEAM GPT</div>
