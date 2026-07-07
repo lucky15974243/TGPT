@@ -642,3 +642,45 @@ h1 {
     text-shadow: 0 0 28px rgba(37,248,154,.55);
   }
 }
+.socials {
+  max-width: 1000px;
+  margin: 90px auto;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(37,248,154,.2);
+}
+
+.socials h2 {
+  color: #25f89a;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.socials p {
+  color: #cfcfcf;
+  margin-bottom: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-buttons a {
+  background: #25f89a;
+  color: #03150c;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 25px rgba(37,248,154,.4);
+}
