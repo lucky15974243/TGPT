@@ -408,3 +408,13 @@ html {
 .nav-links a:hover {
   color: #20ff8a;
 }
+.features {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
