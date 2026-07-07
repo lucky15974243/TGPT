@@ -316,3 +316,17 @@ box-shadow:0 0 30px rgba(0,255,170,.18);
   color: #20ff8a;
   margin: 10px 0;
 }
+.faq {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq .token-card {
+    margin-bottom: 20px;
+}
