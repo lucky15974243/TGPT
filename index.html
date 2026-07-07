@@ -163,7 +163,18 @@ Built for GPT users, AI builders, traders, creators, and everyone helping shape 
         <div class="contract">
           <span>Official mint</span>
           <code>BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump</code>
-          <button onclick="copyMint(this)">Copy</button>
+          <script>
+function copyMint(button) {
+  const mint = "BVwsbC6gmTuVmmsaK8XEa1N7Gt15bntnnWfFQUcmpump";
+
+  navigator.clipboard.writeText(mint).then(() => {
+    button.textContent = "Copied!";
+    setTimeout(() => {
+      button.textContent = "Copy";
+    }, 1500);
+  });
+}
+          </script>
         </div>
       
   <div class="backup">
