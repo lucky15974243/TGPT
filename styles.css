@@ -428,3 +428,31 @@ html {
     text-align: center;
     margin-bottom: 25px;
 }
+.faq{
+    max-width:900px;
+    margin:80px auto;
+    padding:20px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.faq-item{
+    background:#101b16;
+    border:1px solid rgba(0,255,160,.15);
+    border-radius:16px;
+    padding:20px;
+    margin-bottom:16px;
+}
+
+.faq-item h3{
+    color:#42ffa5;
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    color:#cfd8d3;
+    line-height:1.6;
+}
