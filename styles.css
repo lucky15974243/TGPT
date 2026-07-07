@@ -295,3 +295,10 @@ box-shadow:0 0 30px rgba(0,255,170,.18);
 .token-card p {
     color: #bbb;
 }
+.backup {
+    margin-bottom: 40px;
+}
+
+.chart {
+    margin-top: 50px;
+}
