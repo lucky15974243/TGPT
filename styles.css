@@ -684,3 +684,38 @@ h1 {
   transform: scale(1.06);
   box-shadow: 0 0 25px rgba(37,248,154,.4);
 }
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.ai-orb {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #25f89a 0%, #0b5f38 45%, #020b07 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(37,248,154,.55);
+  animation: orbPulse 3s ease-in-out infinite;
+}
+
+.ai-orb span {
+  font-size: 42px;
+  font-weight: 900;
+  color: white;
+}
+
+@keyframes orbPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 45px rgba(37,248,154,.45);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 85px rgba(37,248,154,.8);
+  }
+}
