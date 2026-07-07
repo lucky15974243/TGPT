@@ -202,4 +202,54 @@ color:#35ff99;
 margin-top:8px;
 color:#b8c2cc;
 font-size:15px;
+}.hero{
+padding-top:40px;
+}
+
+.hero h1{
+font-size:64px;
+line-height:1;
+margin-bottom:18px;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.7;
+color:#c7d4d4;
+max-width:760px;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:16px;
+margin-top:30px;
+margin-bottom:40px;
+}
+
+.btn{
+transition:.25s;
+}
+
+.btn:hover{
+transform:translateY(-4px) scale(1.03);
+box-shadow:0 0 30px rgba(0,255,170,.35);
+}
+
+.panel{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(0,255,170,.18);
+border-radius:22px;
+padding:28px;
+margin:40px 0;
+}
+
+.cards article{
+transition:.25s;
+}
+
+.cards article:hover{
+transform:translateY(-6px);
+border-color:#35ff99;
+box-shadow:0 0 30px rgba(0,255,170,.18);
 }
