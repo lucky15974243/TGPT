@@ -461,9 +461,8 @@ function copyMint(btn) {
   btn.textContent = "Copied!";
   setTimeout(() => btn.textContent = "Copy", 1200);
 }
-async function loadNews() {
+function loadNews() {
   const newsFeed = document.getElementById("newsFeed");
-
   if (!newsFeed) return;
 
   newsFeed.innerHTML = `
@@ -472,8 +471,12 @@ async function loadNews() {
     <div class="feed-item">🚀 Community updates and AI market news coming daily.</div>
   `;
 }
+
 loadStats();
+loadNews();
+
 setInterval(loadStats, 30000);
+setInterval(loadNews, 30000);
 </script>
 
 </body>
