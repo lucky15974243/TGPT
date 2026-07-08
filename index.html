@@ -461,7 +461,17 @@ function copyMint(btn) {
   btn.textContent = "Copied!";
   setTimeout(() => btn.textContent = "Copy", 1200);
 }
+async function loadNews() {
+  const newsFeed = document.getElementById("newsFeed");
 
+  if (!newsFeed) return;
+
+  newsFeed.innerHTML = `
+    <div class="feed-item">🤖 OpenAI, Claude, Gemini, Grok and AI tools are moving fast.</div>
+    <div class="feed-item">📰 TEAM GPT tracks AI news, model updates, and builder trends.</div>
+    <div class="feed-item">🚀 Community updates and AI market news coming daily.</div>
+  `;
+}
 loadStats();
 setInterval(loadStats, 30000);
 </script>
